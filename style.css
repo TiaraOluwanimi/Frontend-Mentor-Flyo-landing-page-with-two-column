@@ -1,0 +1,228 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  max-width: 100%;
+}
+#logo {
+  float: left;
+  padding-bottom: 10px;
+}
+#nav {
+  background-color: transparent;
+  overflow: hidden;
+}
+#nav a {
+  float: right;
+  color: hsl(243, 87%, 12%);
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+#nav li {
+  list-style: none;
+}
+#one {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  background-color: white;
+}
+#one img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+#two {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: hsl(240, 75%, 98%);
+}
+#two #anchor a {
+  color: green;
+  text-decoration: underline;
+}
+#two h3 {
+  text-align: center;
+}
+#two span {
+  text-align: center;
+}
+#two img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: hsl(224, 93%, 58%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.8;
+}
+#testimonial {
+  width: 70%;
+  background-color: white;
+  padding: 5%;
+  font-size: 13px;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+#testimonial #deets {
+  display: flex;
+  flex-direction: row;
+}
+#testimonial:before {
+  content: open-quote;
+  font-size: 3rem;
+}
+#deets span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+#testimonial img {
+  max-width: 50px;
+  border-radius: 50%;
+  display: inline;
+}
+#four {
+  padding: 10% 5% 15% 5%;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(238, 22%, 44%);
+  margin-bottom: 0;
+}
+#four p {
+  font-family: "Open Sans", sans-serif;
+}
+#four input {
+  width: 80%;
+  border: none;
+  margin-bottom: 5px;
+}
+#four button {
+  width: 80%;
+}
+#five {
+  width: 100%;
+  margin-top: 0;
+  padding: 5%;
+  color: whitesmoke;
+  background-color: hsl(243, 87%, 12%);
+}
+#five .navlinks li {
+  list-style: none;
+}
+#five .navlinks a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-emphasis: none;
+  line-height: 25px;
+}
+#five #social-icons {
+  width: 100%;
+  text-align: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 750px) {
+  #one,
+  #four,
+  #five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #one h2,
+  #two h3 {
+    text-align: left;
+  }
+  #one h2 {
+    font-size: 2rem;
+  }
+  #two {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #testimonial {
+    margin-left: 0%;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  #four article {
+    padding: 0;
+    max-width: 100%;
+  }
+  #four input,
+  #four button {
+    border-radius: 0px;
+  }
+  #four {
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+  }
+  #four input {
+    width: 100%;
+  }
+  #four button {
+    width: 45%;
+    font-size: 11px;
+  }
+
+  #five {
+    align-items: center;
+    justify-content: space-around;
+  }
+  #five li {
+    line-height: 30px;
+  }
+}
